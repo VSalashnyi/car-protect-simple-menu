@@ -1,8 +1,6 @@
 This is a test task for a Junior front-end developer position in Vocter company.
 http://vocter.com
 
-Initial idea was taken from http://autoprotech.ua/ so you can take a look how a similar functionality forks there.
-
 Look at a PSD file in the repo and create a markup for a module described in it.
 
 - Plans (basic, standard etc) should be selected via cursor hover.
