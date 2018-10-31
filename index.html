@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car protect</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#">
+                    <img src="img/icons/icon_header.png" alt="logo">
+            </a>
+            <h2>Цены и варианты защиты</h2>
+        </header>
+        <div class="container">
+           <div id="car_class">
+                <div class="mod">
+                    <h3>Класс mini</h3>
+                    <img src="img/icons/mini_logo.png" alt="Mini">
+                    <a id="mini" class="classes" href="#">Рассчитать стоимость</a>
+                </div>
+                <div class="mod">
+                    <h3>Средний класс</h3>
+                    <img src="img/icons/middle_logo.png" alt="Mini">
+                    <a id="middle" class="classes" href="#">Рассчитать стоимость</a>
+                </div>
+                <div class="mod">
+                    <h3>Премиум класс</h3>
+                    <img src="img/icons/premium_logo.png" alt="Mini">
+                    <a id="premium" class="classes" href="#">Рассчитать стоимость</a>
+                </div>
+           </div>
+           <div id="main">
+               <div id="field">
+                    <div id="showcase">
+                        <img id="image" src="img/cars/default.png" alt="">
+                    </div>
+                    <div id="partial"></div>
+                    <div id="feedback">
+                        <div id="price">
+                            <p class="price_text">Цена:</p>
+                            <hr>
+                           <p>Материалы + работа <span id="output" class="price_text"></span><span class="price_text">руб.</span></p>
+                       </div>
+                        <a id="recall" href="#">Перезвоните мне</a>
+                    </div>           
+               </div>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#" id="minimal">Минимальный</a></li>
+                        <li><a href="#" id="standart">Стандарт</a></li>
+                        <li><a href="#" id="standart+">Стандарт+</a></li>
+                        <li><a href="#" id="standart++">Стандарт++</a></li>
+                        <li><a href="#" id="standart+++">Стандарт+++</a></li>
+                        <li><a href="#" id="all">Целиком</a></li>
+                        <li><a href="#" id="dropdown">Частями <i class="fas fa-angle-down fa-lg"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#" id="headlights">Оптика</a></li>
+                                <li><a href="#" id="inside_tresholds">Пороги внутренние</a></li>
+                                <li><a href="#" id="outside_tresholds">Пороги внешние</a></li>
+                                <li><a href="#" id="doors">Двери(4шт)</a></li>
+                                <li><a href="#" id="rear_wing">Задние Крылья</a></li>
+                                <li><a href="#" id="hood">Капот</a></li>
+                                <li><a href="#" id="front_bumper">Передний бампер</a></li>
+                                <li><a href="#" id="rear_bumper">Задний бампер</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+           </div>
+        </div>
+    </section>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/partial.js"></script>
+    <script src ="js/price.js"></script>
+</body>
+</html>
