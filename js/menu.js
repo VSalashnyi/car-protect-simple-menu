@@ -1,21 +1,34 @@
-$("nav > ul > li > a").mouseenter(function(event){
-    if(event.target.id !== 'dropdown'){
 
-        $("nav > ul > li > a").each(function(){
-            $(this).removeClass('active_link');
-            $(this).click((event) => event.preventDefault());
-        })      
+// $("nav > ul > li > a").mouseenter(function(event){
+//     if(event.target.id !== 'dropdown'){
+//         drawCar(current, event.target.id); 
+//         drawPrice(current, event.target.id);
 
+//         if(partial_trigger){
+//             partial.innerHTML = '';
+//             drawPartial(event.target.id);
+//         }
+//     }    
+// })
+
+// $("nav > ul > li > a").mouseleave(function(){
+//     drawCar(current, lastItem);
+//     drawPrice(current, lastItem);
+//     if(partial_trigger){
+//         partial.innerHTML = '';
+//         drawPartial(lastItem);
+//     }
+// })
+
+$("nav > ul > li > a").click(function(event){
+    if(event.target.id !== 'dropdown'){ 
+        $("nav > ul > li > a").removeClass('active_link');
         $(this).addClass('active_link');
+        event.preventDefault();
         lastItem = event.target.id;
         drawCar(current, lastItem); 
         drawPrice(current, lastItem);
-
-        if(partial_trigger){
-            partial.innerHTML = '';
-            drawPartial(lastItem);
-        }
-    }    
+    }
 })
 
 
@@ -57,7 +70,6 @@ $('.submenu > li > a').mouseenter(function(event){
 
 
 function reset(){
-    console.log('remooving');
     $("nav > ul > li > a, ul.submenu > li > a ").removeClass('active_link');
     document.getElementById('standart++').classList = "active_link";
     $("ul.submenu").css("display", "none");
